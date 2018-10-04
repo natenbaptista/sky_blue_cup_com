@@ -1,0 +1,92 @@
+body, html {
+    height: 100%; /* to avoid scrollbars when the css grid is setup*/
+    margin: 0; /*get rid of the default padding*/
+}
+
+body{
+    /*font-family: 'Montserrat';*/
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.bg, .bg2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bg {
+    /* Use clippy bzellefree */
+    -webkit-clip-path: polygon(0 100%, 0 0, 15% 56%, 23% 71%, 35% 80%, 57% 84%, 76% 90%, 100% 100%);
+    clip-path: polygon(0 100%, 0 0, 15% 56%, 23% 71%, 35% 80%, 57% 84%, 76% 90%, 100% 100%);
+    z-index: -1; /* since there are two bg*/
+    background-color: #226dbc;
+}
+
+.bg2{
+    -webkit-clip-path: polygon(0 100%, 0 0, 17% 54%, 25% 70%, 37% 79%, 59% 83%, 78% 89%, 100% 100%);
+    clip-path: polygon(0 100%, 0 0, 17% 54%, 25% 70%, 37% 79%, 59% 83%, 78% 89%, 100% 100%);
+    z-index: -2;
+    background-color: #2a5f98;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 40% auto;
+    height: auto;
+    align-self: center;
+    margin: 0 50px;
+}
+
+ul{
+    list-style-type: none;
+    perspective: 1000px;
+}
+
+ul li{
+    display:grid;
+    grid-template-columns: 20% auto;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transform: rotateY(30deg) rotateX(15deg);
+/*    position: absolute; /*sit on top of each other slightly */
+    border-bottom:4px solid rgba(0,0,0,.2);
+    mix-blend-mode: multiply;/*gives the glass effect*/
+    width: 60%;
+}
+
+ul li:nth-child(1){
+    background: rgb(242, 228, 255);
+    z-index: 2;
+}
+
+ul li:nth-child(2){
+    background: #9797ee;
+    z-index: 1;
+}
+
+ul li:nth-child(3){
+    background: #9bee97;
+    z-index: 0;
+}
+
+ul li:hover{
+    transform: rotateY(10deg) rotateX(7deg) scale(1.03);
+    transition: transform .4s ease-out;
+    z-index:3;
+    mix-blend-mode:normal;
+}
+
+.right{
+    font-family: "Console";
+}
+
+.left{
+    font-family: "Arial";
+}
+
+.l_title{
+    font-size: 1.5em;
+}

@@ -1,0 +1,56 @@
+<head>
+<title>Sky Blue Cup</title>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="description" content="Test webpage"> <!--  -->
+<meta name="keywords" content="Naten Baptista"> <!-- For search engine tags-->
+<meta name="author" content="Naten Baptista">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!-- The information between the BODY and /BODY tags is displayed.-->
+<body>
+
+<div style="display: flex; justify-content: center;">
+<img src="images/Sbc_transparent_mini.png" alt="Sky-Blue-Cup.Com" style="width:100px;height:61px;">
+</div>
+
+<h1 style="font-family:verdana;text-align:center;">
+Cieloski <i>MMXVIII</i>
+</h1>
+
+<p>
+Sky blue cup was originally created in Nov 2011 as a hosting site for wordpress template.
+<br>
+However the author never found time to go ahead with the site and its in the current state as of today.</p>
+
+<table id="table01" style="font-family:courier;width:50%">
+	<caption>Family</caption>
+  <tr style="font-family:verdana;text-align:left;"> 
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Cielo</td>
+    <td>Baptista</td> 
+    <td>35</td>
+  </tr>
+  <tr>
+    <td>CieanaLove</td>
+    <td>Baptista</td> 
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Nathaniel</td>
+    <td>Baptista</td> 
+    <td id="nat_age">1</td>
+  </tr>  
+</table>
+
+<p>Dedicated to <span class="bluefont">Clock and Skookie</span></p>
+
+<hr>
+
+<!-- And add a copyright notice.-->
+<p>&#169; Naten Baptista. All rights reserved.</p>
+</body>
+</html>
